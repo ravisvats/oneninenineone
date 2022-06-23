@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Article Detail</title>
+</head>
+<body>
+<h1>{{post.title}}</h1>
+<small>By: {{post.author.first_name}} {{post.author.last_name}} </small>
+<br/>
+<hr>
+{{post.body}}
+
+<br/><br/>
+<a href="{% url 'home'%}">Back</a>
+</body>
+</html>
